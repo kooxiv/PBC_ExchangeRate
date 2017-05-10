@@ -25,28 +25,32 @@
 
     <hr>
 
-    <h3>数据来源</h3>
-
+    <h4>数据来源</h4>
+    <p>
     <ul class="task-list">
-        <li><a href="http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/index.html">人民币汇率中间价公告
-            http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/index.html</a></li>
-        <li><a href="http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2929357/index.html">人民币汇率中间价公告历史数据
-            http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2929357/index.html</a></li>
+        <li><a href="http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/index.html">人民币汇率中间价公告</a></li>
+        <li><a href="http://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2929357/index.html">人民币汇率中间价公告历史数据</a>
+        </li>
     </ul>
-
+    </p>
     <hr>
 
+    <h4>目录结构</h4>
     <p>
     <pre>
                 └─pbc
-                    │  pbc.exe
+                    │  pbc.exe //主程序
                     │
                     └─app
-                            exchangeRate_0.xls
-                            lastPosition.txt
+                            exchangeRate_0.xls //生成的Excel文件
+                            lastPosition.txt   //记录进度 Excel里的最新数据日期  若删除此文件 则会重新获取所有数据
     </pre>
     </p>
 
+    <hr>
+    <p></p>
+
+    <h4>截图</h4>
     <p>
         <img src="./screenshot/fetch.png"
              alt="" data-canonical-src="https://placekitten.com/g/300/200/" style="max-width:100%;">
